@@ -23,7 +23,7 @@ from catboxpy.catbox import CatboxClient
 from dpy_paginator import paginate
 from yt_dlp import YoutubeDL
 import re
-youguessedit = input('Run IHTX Bot? (Y/N)')
+youguessedit = input('Run IHTXVideoBot? (Y/N)')
 if youguessedit.upper() == 'Y':
   print('Sent message to run.')
 else:
@@ -223,7 +223,7 @@ def getyoutubeid(url: str) -> str | None:
     return None
 @bot.command()
 async def suggest(ctx):
-  await ctx.send("[Suggest any ideas here.](https://amtve.straw.page/suggestihtxbot)")
+  await ctx.send("[Suggest any ideas here.](https://suggest-me.straw.page/)")
 @bot.command()
 async def command(ctx,*,command):
     """
