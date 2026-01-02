@@ -56,7 +56,7 @@ FILE_EXTENSION = ".ts"
 ADDITIONAL_COMPATIBILITY = ""
 handler = logging.FileHandler(filename='discord.log',encoding='utf-8',mode='w')
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=":", intents=intents)
+bot = commands.Bot(command_prefix=prefix, intents=intents)
 statuses = ["for AMTVE","everyone","NotSoBot","TADC","Robot 64","SMG4","Numberblocks"]
 @bot.event
 async def on_ready():
