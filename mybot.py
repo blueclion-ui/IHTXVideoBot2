@@ -43,7 +43,7 @@ c.execute('''
     ''')
 conn.commit()
 
-prefix = ';'
+prefix = ':'
 theme = 0x6100FF
 invitelink = "https://discord.com/oauth2/authorize?client_id=1456584616533299343&permissions=8&integration_type=0&scope=bot"
 bottoken = "MTQ1NjU4NDYxNjUzMzI5OTM0Mw.GunLfu.-LOT2FQEoZPYkvqoAdW78A25H70OMbKsPlLB5M" # place your bot token here
@@ -871,8 +871,8 @@ async def download(ctx, url:str):
       Downloads YouTube videos.
 
       Usage:
-        ;download https://youtu.be/8gklmIIyOVQ
-        ;download https://youtube.com/watch?v=90U0dYQDft0
+        :download https://youtu.be/8gklmIIyOVQ
+        :download https://youtube.com/watch?v=90U0dYQDft0
     """
     loadMessage = await ctx.reply("> <a:load:1417523157824442599> Loading Video (1/2)", mention_author=False)
     file_names = [os.path.join(UPLOAD_DIR, f"output_{ctx.author.id}.mp4"),os.path.join(os.path.join(UPLOAD_DIR,"ihtx"), f"input_{ctx.author.id}.mp4")]
